@@ -18,7 +18,9 @@ Igra je identična poznatoj igri Spojnica iz TV Slagalice, sa razlikom u broju p
 |Magnezijum|1|1|  N    |    
 |Olovo     |2|2|  Pb   |    
 |Azot      |3|3|  Mg   |
+
 *Unos (x-x):* **1-3**
+
 |          | | |       |    
 |:---------|-|-|------:|    
 |Magnezijum|1|1|  Mg   |    
@@ -41,9 +43,11 @@ Ponuđeni odgovori se prilikom svakog prikazivanja pitanja nasumično mešaju.
 ### Asocijacije
 
 Poslednja igra u ovoj aplikaciji dozvoljava osvajanje maksimalno **34** boda, budući da sva polja zajedno vrede **35** bodova u sledećem poretku:
+
 |neotvoreno polje|pogođena kolona|pogođeno rešenje|
 |:--------------:|:-------------:|:--------------:|
 | 1 poen         | 3 poena       | 7 poena        |
+
 Kao i kod *Ko zna zna*, računanje poena se vrši u toku izvršavanja petlje igre. 
 Posle svakog otvorenog polja korisnik ima mogućnost da pogađa bilo koje validno polje. U slučaju da pogodi, dozvoljeno mu je da pokuša ostala (naravno ako nije rešio asocijaciju). Unos podržava latinična slova kao i slova abecede.
 
