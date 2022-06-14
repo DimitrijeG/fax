@@ -1,0 +1,3 @@
+- add heuristics and rework
+- optimize derive_index()
+- add color for ex move
