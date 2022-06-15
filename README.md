@@ -1,5 +1,6 @@
 # fax #
 
-Repository for materials and projects for FTN. Contains 2 sections for now:
+Repository for materials and projects for FTN. Contains 3 sections:
 * Assembly
 * Python
+* Web
