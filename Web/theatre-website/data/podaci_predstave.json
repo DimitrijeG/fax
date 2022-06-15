@@ -1,0 +1,464 @@
+{
+    "pozorista": {
+        "-MNQgy9N5foEWTmmA_1U": {
+            "naziv": "Srpsko narodno pozorište",
+            "adresa": "Pozorišni trg 1, Novi Sad",
+            "slika": "https://i.imgur.com/8w5OeH0.jpeg",
+            "brojPredstava": 3,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW69"
+        },
+        "-MNQftJa4rskH-dBqE9Z": {
+            "naziv": "Narodno pozorište Beograd",
+            "adresa": "Francuska 3, Beograd",
+            "slika": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Narodno_pozoriste_u_Beogradu.JPG",
+            "brojPredstava": 7,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW61"
+        },
+        "-MNQg8Nd8YPRs-5Kbgqu": {
+            "naziv": "Jugoslovensko dramsko pozorište",
+            "adresa": "Kralja Milana 50, Beograd",
+            "slika": "https://i.imgur.com/y4KN6mc.jpeg",
+            "brojPredstava": 5,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW60"
+        },
+        "-MNQgI0t2nV3AT1YxNAr": {
+            "naziv": "Pozorište na Terazijama",
+            "adresa": "Terazije 29, Beograd",
+            "slika": "https://i.imgur.com/MPWDmDu.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        },
+        "-MNQgO7Cm756dkG36efQ": {
+            "naziv": "Narodno pozorište Sombor",
+            "adresa": "Trg Koste Trifkovića 2, Sombor",
+            "slika": "https://i.imgur.com/lxrtM6f.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        },
+        "-MNQgUTr_lN9O7L8AoUS": {
+            "naziv": "Narodno pozorište \"Toša Jovanović\"",
+            "adresa": "Trg Slobode 7, Zrenjanin",
+            "slika": "https://i.imgur.com/OvZliwm.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        },
+        "-MNQgfzXvQgwB8K-SVfF": {
+            "naziv": "Knjaževačko-srpski teatar",
+            "adresa": "Dančićeva 3, Kragujevac",
+            "slika": "https://i.imgur.com/14wWYUK.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        },
+        "-MNQgnHVDMtvSasYG0C8": {
+            "naziv": "Kruševačko pozorište",
+            "adresa": "Vidovdanska 26, Kruševac",
+            "slika": "https://i.imgur.com/wBaeouG.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        },
+        "-MNQg_nhfUBoPJKBu72e": {
+            "naziv": "Pozorište mladih - Novi Sad",
+            "adresa": "Ignjata Pavlasa 4, Novi Sad",
+            "slika": "https://i.imgur.com/4Kubw72.jpg",
+            "brojPredstava": 10,
+            "idPredstava": "-MNVEu6iMr2EFlQO6TW62"
+        }
+    },
+    "predstave": {
+        "-MNVEu6iMr2EFlQO6TW61": {
+            "-MNQftJa4rskH-dBqE9Z0": {
+                "naziv": "Antigona",
+                "kod": "100101",
+                "kratakOpis": "Antigona je Sofoklova tragedija iz 5. veka p. n. e.. To je klasična tragedija starogrčke dramske umetnosti. Drama je podeljena u sedam činova.",
+                "trajanje": "190",
+                "zanr": "Drama",
+                "opis": "Mit koji je Sofokle dramatizovao u Antigoni pripada krugu tebanskih legendi i ne može se naći u Homerovim epovima; možda ga je Sofokle preuzeo iz nekog epa za koji mi ne znamo. Posle Edipovog odlaska iz Tebe, njegovi sinovi, blizanci Polinik i Eteokle, izabrani su za tebanske vladare. Trebalo je da Tebom upravljaju kao suvladari koji će se svake godine smenjivati. Međutim Eteokle, koji je prvi stupio na vlast, odbio je da bratu ustupi presto kad je godina istekla. Uz pomoć svog tasta Adrasta, Polinik je sakupio vojsku i krenuo na Tebu. Opseli su grad, ali ih sreća nije poslužila. Videvši da njegova vojska gubi bitku a da bi sprečio dalje krvoproliće, Polinik je predložio da o pitanju vlasti u Tebi odluči dvoboj između njega i Eteokla. U tom dvoboju su, međutim, obojica poginula. Njihov ujak Kreont preuzeo je komandu nad vojskom i uspeo da odbije napadače.",
+                "slika": "https://i.imgur.com/eZ061X7.jpeg",
+                "cena": 1760,
+                "maxOsobe": 90,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dBqE9Z1": {
+                "naziv": "BALKANSKI ŠPIJUN",
+                "kod": "100102",
+                "kratakOpis": "Tragikomedija koja na odličan način opisuje period (post) komunističkog režima u bivšoj SFRJ. ",
+                "trajanje": "140",
+                "zanr": "Tragikomedija",
+                "opis": "Balkanski špijun je drama o političkoj paranoji. Ilija Čvorović, koji je svojevremeno obožavao Staljina, proveo dve godine u zatvoru, a sada vozi „moskvič“ i uz pomoć mnogobrojnih kredita gradi kakvu-takvu kuću negde na periferiji Beograda; uzeo je, da se nekako finansijski oporavi, na nagovor svoje žene Danice, podstanara. Vođen nepogrešivom paranoidnom logikom totalitarizma, Ilija Čvorović je, od toga časa, uvrteo sebi u glavu da je Petar Jakovljević agent strane sile, opasan imperijalistički špijun, i da je na njemu, Čvoroviću, da zaštiti društvo od njega. On počinje da prati Jakovljevića, fotografiše ga iz potaje, prisluškuje i snima njegove razgovore, kupuje fotografske kamere i magnetofone, zove u pomoć svoga brata Đuru koji dolazi s malim arsenalom oružja na sebi. Najzad, u času kada se Jakovljević sprema da otputuje u Njujork, gde mu se sin razboleo, ali i gde je centar međunarodnog imperijalizma, braća Čvorovići hvataju, saslušavaju i dobro poznatim metodama pokušavaju da iznude priznanje o špijunskoj i diverzantskoj delatnosti, pa se bezazleni pariski šnajca – kao Nušićev Đoka „promincla“ – nađe u neobranom grožđu špijunomanije.",
+                "slika": "https://i.imgur.com/d7Ptfcf.png",
+                "cena": 1950,
+                "maxOsobe": 60,
+                "ocena": 4.18,
+                "ocene": [1, 0, 2, 10, 9]
+            },
+            "-MNQftJa4rskH-dBqE9Z2": {
+                "naziv": "Iranska konferencija",
+                "kod": "100103",
+                "kratakOpis": "Fenomenalna farsa reditelja Ivana Virpajeva. Uvlačenje publike u direktan čin donošenja odluke u okvire same konferencije.",
+                "trajanje": "120",
+                "zanr": "Farsa",
+                "opis": "„Iran­ska kon­fe­ren­ci­ja“ pred­sta­vlja jed­nu od naj­zre­li­jih farsi pro­sla­vlje­nog Iva­na Viri­pa­je­va. U ovom koma­du autor raz­vi­ja jed­nu od svo­jih osnov­nih tema, poe­ti­ku susre­ta, slu­že­ći se sred­stvom dvo­smer­nog osve­šći­va­nja pri­su­stva publi­ke, koja je uče­snik „Iran­ske kon­fe­ren­ci­je“ u punom smi­slu. Kako i sam naziv koma­da upu­ću­je, naša pred­sta­va posta­vlja deli­kat­nu, goru­ću „iran­sku“ temu, sabi­ja sud­bi­ne juna­ka u neo­n­ski hlad­nu kon­ge­snu salu, a zatim ras­pli­će pred publi­kom ras­ko­šnu potku dra­me poput naj­fi­ni­jeg iran­skog ćili­ma.  Nara­tiv­na nit koju autor ispre­da kroz svoj dosa­da­šnji opus veza­na je za komu­ni­ka­ci­ju,  odno­sno nemo­guć­nost savre­me­nog čove­ka za suštin­ski dodir sa svo­jim bli­žnjim, sa „dru­gi­ma“, a poseb­no sa samim sobom i na kon­cu sa Bogom – to suštin­sko ura­nja­nje u Volje­nog o kojem govo­re sve reli­gi­ske prak­se sve­ta.  Kroz pri­zmu islam­ske filo­so­fi­je,  prven­stve­no kroz sufij­sko uče­nje o kojem govo­ri jedan od naj­u­ti­caj­ni­jih pesni­ka sel­džuč­ke epo­he Feri­du­din Muha­med Atar u spe­vu „Govor pti­ca“ pisac nam uka­zu­je na iskre­nost i isti­no­lju­bi­vost, poni­znost, dare­žlji­vost i ple­me­ni­tost, kao savr­še­no ogle­da­lo koje reflek­tu­je vrli­ne koje, na naj­vi­šem nivou pri­pa­da­ju Bogu i sam Viri­pa­jev  nas na stil­ski deli­ka­tan način suo­ča­va sa več­nom težnjom dosti­za­nja uni­ver­zal­nih vrli­na, koje savre­me­nom čove­ku u dobu nad­zor­nog kapi­ta­li­zma delu­ju tako fata­mor­ga­nič­no ne/dosti­žne.",
+                "slika": "https://i.imgur.com/ddGKPTl.jpg",
+                "cena": 3250,
+                "maxOsobe": 45,
+                "ocena": 4.81,
+                "ocene": [0, 0, 1, 3, 23]
+            },
+            "-MNQftJa4rskH-dBqE9Z3": {
+                "naziv": "Karmen",
+                "kod": "100104",
+                "kratakOpis": "Uživajte u čuvenom delu Žorža Bizea u našem pozorištu! Budite svedoci vatrene pobede emocija nad raciom.",
+                "trajanje": "110",
+                "zanr": "Muzička parodija",
+                "opis": "Karmen Žorža Bizea – jedan je od najsnažnijih umetničkih izraza trijumfa strasti nad sentimentalnom ljubavlju. U odnosu na Merimeovu pripovetku, delo predstavlja moćnu poetsku nadgradnju kao plod smislenih strukturnih pomaka. Bizeov Don Hoze, čovek je koga sudbinsko određenje izvodi iz inercije svakodnevice i blede emotivne obaveznosti i uvlači u dubinu nečeg što ne poznaje – svet strasti izvan zakona. Često na scenama predstavljaju Don Hozea kao nesolidnog vojnika koji zapostavlja svoje dužnosti kako bi sledio opasnu zavodnicu. Međutim, Don Hoze počinje da živi tek kad upoznaje Karmen, ljubav se događa kao drugo rođenje, preobražavajući gotovo ektoplazmatičnu ličnost u punokrvnog čoveka.",
+                "slika": "https://i.imgur.com/CAnEAWk.png",
+                "cena": 1490,
+                "maxOsobe": 60,
+                "ocena": 4.81,
+                "ocene": [0, 0, 1, 3, 23]
+            },
+            "-MNQftJa4rskH-dBqE9Z4": {
+                "naziv": "Manon Lesko",
+                "kod": "100105",
+                "kratakOpis": "Pre­vo kom­bi­nu­je rea­li­zam (kori­sti dru­štve­ne tipo­ve, nazi­ve stvar­nih mesta i pri­hva­ta važnost nov­ca) sa pred­ro­man­ti­čar­skom sen­ti­men­tal­no­šću. ",
+                "trajanje": "145",
+                "zanr": "Muzička parodija",
+                "opis": "Manon Lesko je pred­sta­vlje­na prvi put u Tea­tro Ređo u Tori­nu, prvog febru­a­ra 1893, osam dana pre pre­mi­je­re Ver­di­je­vog Fal­sta­fa u Ska­li. Orke­strom je diri­go­vao Ale­sa­ndro Pome, dok su u glav­nim ulo­ga­ma nastu­pi­li Čezi­ra Fera­ni (Manon), Đuze­pe Kre­mo­ni­ni (De Gri­je) i Akile Moro (Lesko). Pot­pu­ni tri­jum­fal­ni uspeh koji je ope­ra posti­gla kod kri­ti­ke i publi­ke ucr­tao je put veo­ma dugoj Puči­ni­je­voj sla­vi, i vero­vat­no se nije pono­vio, za živo­ta kom­po­zi­to­ra, više ni za jed­nu od njego­vih ope­ra, bar kad je kri­ti­ka u pita­nju. Među kri­ti­ka­ma koje su se poja­vi­le sutra­dan posle pre­mi­je­re, pod­se­ti­će­mo se na onu koju je napi­sao Đuze­pe Depa­nis, koji je u „Gaz­zet­ta pie­mon­te­se“ govo­rio o „sjaj­nom uspe­hu ...odu­še­vlje­nju...tri­jum­fu“.",
+                "slika": "https://i.imgur.com/BOnaM5Z.png",
+                "cena": 2250,
+                "maxOsobe": 60,
+                "ocena": 4.39,
+                "ocene": [0, 0, 2, 7, 17]
+            },
+            "-MNQftJa4rskH-dBqE9Z5": {
+                "naziv": "Frenki i Džoni",
+                "kod": "100106",
+                "kratakOpis": "Otkrijte tajne ljubavne sudbine na savršen način. Da li mi tražimo ljubav ili ljubav nađe nas? Kako Džoni kaže: Nikada ne biraš ljubav. Ona bira tebe.",
+                "trajanje": "90",
+                "zanr": "Drama",
+                "opis": "Frenki i Džoni je aktuelan i neophodan komad, jer se svi ponašamo kao da smo samim rođenjem toliko emotivno povređeni da bi do kraja života trebalo od nečeg da se branimo sopstvenim iluzijama iza svojih štitova nedodirljivosti, a to neminovno vodi ka praznini. Ovaj komad govori o skidanju oklopa i gardova. O dozvoljavanju mogućnosti da budemo voljeni. O dozvoljavanju mogućnosti da budemo povređeni. Svi tražimo ljubav, ali da li smo sposobni da volimo? Ova partija šaha dvoje inteligentnih i atraktivnih, ali emocionalno osakaćenih ljudi, ipak je dirljiva jer oni pristaju da daju šansu vezi koja od starta izgleda osuđena na propast i osvajaju nas idejom da i „autsajderi“ mogu jednostavno uploviti u luku ljubavi. Jer, kao što Džoni kaže: Nikada ne biraš ljubav. Ona bira tebe.",
+                "slika": "https://i.imgur.com/IY5xk17.png",
+                "cena": 1250,
+                "maxOsobe": 100,
+                "ocena": 4.39,
+                "ocene": [0, 0, 2, 7, 17]
+            },
+            "-MNQftJa4rskH-dBqE9Z6": {
+                "naziv": "Hasanaginica",
+                "kod": "100107",
+                "kratakOpis": "Hasanaginica je srpska narodna balada, koja je nastala između 1646. i 1649. u Imotskoj krajini i prenosila se sa kolena na kolena po Imotskom i okolini, postojeći tako u usmenom obliku, dok ju nije zapisao 1774. godine italijanski putopisac i etnograf Alberto Fortis",
+                "trajanje": "180",
+                "zanr": "Drama",
+                "opis": "Posle premijere, koja je bila 30. decembra 2001. godine na Sceni 'V sprat', čitali smo i ovakve reči kritike: „Hasanaginicu je režirao Jagoš Marković. A kad on režira, budite sigurni da će, uz svesrdnu pomoć glumaca, uzburkati vaše emocije. On, jednostavno, ne može drugačije”; ” Hasanaginica Vanje Ejdus izuzetno je glumačko ostvarenje”; „Aleksandar Srećković je (…) verovatno najlepši monolog naše novije dramske književnosti (…) izgovorio u najboljoj tradiciji jednog Branka Pleše, kad dramski monolog postaje i muzika, i poezija, i mudrost”, „Hasanaginu majku sigurno i zrelo na scenu donosi Radmila Živković, dok majku Pintorovića, Ksenija Jovanović sačinjava od neprobojne maske, iza koje će se na kraju pojaviti patničko lice žive žene. Efendija Jusuf odlično je scensko ostvarenje Darka Tomovića”; „Ovo je neosporno uspeh za Narodno pozorište, a za reditelja uopštavanje sopstvene raznorodnosti i vidljiv put ka pravom izrazu”.",
+                "slika": "https://i.imgur.com/1sVsuE1.png",
+                "cena": 1850,
+                "maxOsobe": 110,
+                "ocena": 4.27,
+                "ocene": [0, 2, 0, 4, 15]
+            }
+        },
+        "-MNVEu6iMr2EFlQO6TW62": {
+            "-MNQftJa4rskH-dAqR9W0": {
+                "naziv": "Lorem ipsum dolor 1",
+                "kod": "200101",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "70",
+                "zanr": "Farsa",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2565,
+                "maxOsobe": 20,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W1": {
+                "naziv": "Lorem ipsum dolor 2",
+                "kod": "200102",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "70",
+                "zanr": "Muzička parodija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2565,
+                "maxOsobe": 20,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W2": {
+                "naziv": "Lorem ipsum dolor 3",
+                "kod": "200103",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "60",
+                "zanr": "Drama",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 1950,
+                "maxOsobe": 60,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W3": {
+                "naziv": "Lorem ipsum dolor 4",
+                "kod": "200104",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "100",
+                "zanr": "Tragikomedija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 3165,
+                "maxOsobe": 20,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W4": {
+                "naziv": "Lorem ipsum dolor 5",
+                "kod": "200105",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "110",
+                "zanr": "Farsa",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2965,
+                "maxOsobe": 10,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W5": {
+                "naziv": "Lorem ipsum dolor 6",
+                "kod": "200106",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "60",
+                "zanr": "Tragikomedija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 1550,
+                "maxOsobe": 20,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W6": {
+                "naziv": "Lorem ipsum dolor 7",
+                "kod": "200107",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "140",
+                "zanr": "Muzička parodija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 950,
+                "maxOsobe": 30,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W7": {
+                "naziv": "Lorem ipsum dolor 8",
+                "kod": "200108",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "130",
+                "zanr": "Farsa",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 1165,
+                "maxOsobe": 30,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W8": {
+                "naziv": "Lorem ipsum dolor 9",
+                "kod": "200109",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "110",
+                "zanr": "Muzička parodija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 2965,
+                "maxOsobe": 110,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            },
+            "-MNQftJa4rskH-dAqR9W9": {
+                "naziv": "Lorem ipsum dolor 10",
+                "kod": "200110",
+                "kratakOpis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "trajanje": "130",
+                "zanr": "Tragikomedija",
+                "opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "slika": "https://i.imgur.com/2dEwoRm.png",
+                "cena": 1110,
+                "maxOsobe": 60,
+                "ocena": 4.09,
+                "ocene": [0, 2, 4, 7, 10]
+            }
+
+        },
+        "-MNVEu6iMr2EFlQO6TW69": {
+            "-MNQftJa4rskH-dBqF9Z0": {
+                "naziv": "Travijata",
+                "kod": "500101",
+                "kratakOpis": "Travijata (ital. La Traviata) je delo u tri čina italijanskog kompozitora Đuzepea Verdija. Libreto je napisao Frančesko Marija Pjave prema drami Dama s kamelijama (franc. La dame aux camélias) Aleksandra Dime.",
+                "trajanje": "180",
+                "zanr": "Muzička farsa",
+                "opis": "eme društvene osude, predrasuda i licemjerja su Verdiju tada bile bliske, jer je u Busetu živio nevenčano s bivšom sopraniskinjom Đuzepinom Streponi, majkom vanbračne dece, i zbog te veze bio je izložen zgražanju i protestima konzervativnih sugrađana. U to doba, Italijani su bili daleko manje liberalni od Francuza i Verdi je skandaloznu Margaritu iz Dame s kamelijama (koja se temelji na slavnoj pariskoj kurtizani Mari Duplesis, bivšoj Duminoj ljubavnici) pretvorio u plemenitu Violetu.",
+                "slika": "https://i.imgur.com/tFb9t77.png",
+                "cena": 2760,
+                "maxOsobe": 50,
+                "ocena": 4.23,
+                "ocene": [0, 2, 4, 3, 13]
+            },
+            "-MNQftJa4rskH-dBqF9Z1": {
+                "naziv": "USPAVANKA ZA VUKA NIČIJEG",
+                "kod": "500102",
+                "kratakOpis": "Bi­li su mla­di i pu­ni na­de jer su, po­red se­be sa­mih, sa­mo nju i ima­li. Je­dan do­ga­đaj pro­mi­je­nio je nji­ho­ve ži­vo­te za­u­vi­jek. Osta­la je kri­vi­ca. Da li je na­met­nu­ta, da li je de­lji­va, da li po­sto­ji?",
+                "trajanje": "130",
+                "zanr": "Komedija",
+                "opis": "Uspavanka za Vuka Ničijeg je predstava o ljubavi i prijateljstvu četvoro ljudi odraslih u domu za nezbrinutu decu. Jedan tragični događaj iz prošlosti obeležio je njihovo odrastanje. Ljubav između dva mlada, čista bića, postaće ljubavni trougao zauvek osenčen osećanjem krivice. Postoji li zajedničko osećanje krivice? Može li snaga prijateljstva nadoknaditi gubitke? Možemo li i umemo li da oprostimo greške iz prošlosti?",
+                "slika": "https://i.imgur.com/PTWrLpf.png",
+                "cena": 1050,
+                "maxOsobe": 90,
+                "ocena": 4.81,
+                "ocene": [0, 0, 1, 3, 23]
+            },
+            "-MNQftJa4rskH-dBqF9Z2": {
+                "naziv": "Sumnjivo lice",
+                "kod": "500103",
+                "kratakOpis": "Krajem sedamdesetih i početkom osamdesetih godina prošloga veka može se reći da se u nas vodila poslednja i najočajnija bitka između dva doba, jednoga koje je izumiralo i drugoga koje je nastupalo. ",
+                "trajanje": "180",
+                "zanr": "Komedija",
+                "opis": "Josip Đorđević (1861–1892) iz sela Trbušnica je stvarna ličnost o kojoj je pod imenom Josif iz Trbušnice Nušić pisao i autentično ga prikazao u svom delu Sumnjivo lice. Josip je bio u sukobu sa kapetanom u svom selu, sa onim u Lazarevcu i sa načelnikom Kolubarskog sreza. Iz knjige profesora Miomira Ž. Plećevića Istorijski pregled okoline Trbušnice i poreklo stanovništva Trbušnice saznajemo i: „Načelnik šalje pandure da ga uhvate i dovedu u srez, ali im on vešto umače. Posle toga Josip je za duže vreme retko kada spavao u kući, ali se nije odmetao u šumu. Prema kazivanju poznatog Trbušničkog lovca Ljubivoja-Ljube Kandića, inače jednog od potomaka loze Dimitrijevića, Josip se najčešće skrivao u kolibi na svom imanju u Rakovcu, ili u kamenjaru u njivi kod zapisa, u istom potesu. Tu ga je Ljuba često nalazio i sa njim razgovarao, kad bi u ranu zoru dolazio u lov u rakovačkom zabranu. Kada se situacija malo smirila i izmenila, a pošto nije imao nikakvih nedela, ili krivice, Josip se vrati kući. Ali, svoju naivnost i saradnju sa hajducima platio je glavom.",
+                "slika": "https://i.imgur.com/HfYlQN2.png",
+                "cena": 1550,
+                "maxOsobe": 50,
+                "ocena": 4.81,
+                "ocene": [0, 0, 0, 3, 13]
+            }
+        },
+        
+        "-MNVEu6iMr2EFlQO6TW60": {
+            "-MNQftJa4rskH-dBqF9Z3": {
+                "naziv": "Put u Damask",
+                "kod": "500104",
+                "kratakOpis": "A šta se promenilo u čoveku devetnaestog veka što drama nije umela da prezentuje? Šezdesetih godina u Evropi su liberalizam i vera u individuum dostigli vrhunac.",
+                "trajanje": "190",
+                "zanr": "Drama",
+                "opis": "Pobuna protiv crkve i autoriteta hrišćanstva, Darvinova knjiga o poreklu vrsta iz 1859, filozofiranje o ličnosti kao suštini postojanja, psihološko (naučno) „učenje o duši“ (što je uključivalo izučavanje psihičkih oboljenja) – sve to je doprinosilo okretanju od univerzalnog prema pojedinačnom čoveku. To shvatanje je našlo izraz u Kjerkegorovoj filozofiji: „egzistencija je pre esencije“ (Ž. P. Sartr), a prenosilo se „u skandinavskoj tradiciji kao serija dodira rukama – od učitelja do učenika“ (Ivo de Figuiredo), od Kjerkegora do Ibzena, od Ibzena do Strindberga...",
+                "slika": "https://i.imgur.com/E1Lo4Ou.png",
+                "cena": 2150,
+                "maxOsobe": 40,
+                "ocena": 4.31,
+                "ocene": [1, 0, 3, 3, 12]
+            },
+            "-MNQftJa4rskH-dBqF9Z4": {
+                "naziv": "Nesporazum",
+                "kod": "500105",
+                "kratakOpis": "STVARANjE MALIH UTOPIJA KAO ZADATAK ŽIVOTA - Izmišljeni dijalog reditelja i dramaturga",
+                "trajanje": "130 ",
+                "zanr": "Drama",
+                "opis": "Dajmo jednostavan odgovor na pitanje zašto se bavimo Nesporazumom danas: Jan, glavni junak ovog Kamijevog komada, tek prevalivši tridesetu godinu života u kojem je pre svega egzistirao, pokušava najzad da definiše sebe, ali ne kroz jasnu perspektivu ljubavi u porodici koju treba da stvori sa svojom požrtvovanom ženom, već kroz njemu nepoznat, davno izgubljen dom, u kojem ga umesto majčinske i sestrinske ljubavi dočekuje zločin.",
+                "slika": "https://i.imgur.com/E41Eemt.png",
+                "cena": 2150,
+                "maxOsobe": 40,
+                "ocena": 4.81,
+                "ocene": [0, 0, 1, 3, 23]
+            },
+            "-MNQftJa4rskH-dBqF9Z5": {
+                "naziv": "Kovači",
+                "kod": "500106",
+                "kratakOpis": "Kovači su drama kultivisanog izraza, puna nezlobive ironije koja katkad prelazi u sarkazam, drama koja govori o jednom krvavom problemu smeštenom u, čini se, večitom algoritmu istorijske zbilje ovog tla, iz perspektive pomalo rezigniranog mudraca.",
+                "trajanje": "115",
+                "zanr": "Drama",
+                "opis": "Ova drama, napisana davne 1991. nije izgubila na značaju, te se njenim scenskim izvođenjem ne bi narušila jedna od principijelnih odrednica savremenog domaćeg repertoara – a to je aktuelnost. Bez konvencionalnih i banalnih dramskih stereotipa (od ubifikcije do karakterizacije, od zapleta do raspleta) ova drama na umetnički tačan i verodostojan način otvara i pokreće pitanja lapidarno sažeta u „Ko je ko, šta je šta, šta je čije, čiji je ko, ko je čiji”... Pitanja koja jesu deo našeg sadašnjeg života ali i sudbine...",
+                "slika": "https://i.imgur.com/linxRWC.png",
+                "cena": 1800,
+                "maxOsobe": 45,
+                "ocena": 4.5,
+                "ocene": [0, 1, 2, 3, 14]
+            },
+            "-MNQftJa4rskH-dBqF9Z6": {
+                "naziv": "Moć Sudbine",
+                "kod": "500107",
+                "kratakOpis": "Uživajte u ovom čuvenom delu Verdija, koje se tradicionalno prikazuje kod nas.",
+                "trajanje": "135",
+                "zanr": "Muzička parodija",
+                "opis": "Verdijeva Moć sudbine se na repertoaru Narodnog pozorišta u Beogradu prvi put našla povodom 125 godina od rođenja autora, 7. oktobra 1938. Predstavu je režirao Erih Hecl, dirigovao je Ivan Brezovšek, scenograf je bio Mladen Josić, kostimograf Milica Babić Jovanović, koreograf Anatolij Žukovski, a pevan je libreto u prevodu Miloja Milojevića. Na premijeri su u glavnim ulogama nastupili Aleksandar Trifunović (Markiz od Kalatrave), Zlata Đunđenac (Leonora), Krsta Ivić (Alvaro), Rudolf Ertl (Don Karlo), Žarko Cvejić (Gvardijan), Stanoje Janković (Fra Melitone), Božica Sarvan (Preciozila). Posle premijere, kritičari najviše polemišu o kvalitetu i karakteru ovog Verdijevog dela. ",
+                "slika": "https://i.imgur.com/pp5ipjP.png",
+                "cena": 2350,
+                "maxOsobe": 40,
+                "ocena": 3.82,
+                "ocene": [2, 4, 0, 7, 10]
+            },
+            "-MNQftJa4rskH-dBqF9Z7": {
+                "naziv": "Mikelanđelo",
+                "kod": "500108",
+                "kratakOpis": "Jedan od najznačajnijih umetnika svih vremena, predstavnik razdoblja visoke renesanse, Mikelanđelo Buonaroti centralna je figura ove predstave.",
+                "trajanje": "180",
+                "zanr": "Drama",
+                "opis": "Mikelanđelo je svojim stvaralaštvom dotakao univerzum i pokazao koliko je kultura važna i kako bez nje ljudsko postojanje nema smisla. Zadivljujući  kvalitet njegovih dela daleko nadmašuje sve ono što naš um može da zamisli. Iako Mikelanđelove kreacije datiraju iz perioda od pre pet stotina godina, u savremenom dobu su još interesantnije jer dostojno reprezentuju naš univerzum. I danas među nama postoje nadareni ljudi poput Mikelanđela, ali ne obraćamo pažnju na njih, na njihov dar...",
+                "slika": "https://i.imgur.com/yLU1iCB.jpg",
+                "cena": 1350,
+                "maxOsobe": 120,
+                "ocena": 4.81,
+                "ocene": [0, 0, 1, 3, 23]
+            }
+        },
+        "-MNVEu6iMr2EFlQO6TW55": {
+        
+        }
+    },
+    "korisnici": {
+        "-MNQo55Aw0tLdwahMZMK": {
+            "adresa": "Gogoljeva 39, Novi Sad",
+            "datumRodjenja": "1994-10-22",
+            "email": "ppetrovic@webd.com",
+            "ime": "Petar",
+            "lozinka": "petar123",
+            "prezime": "Petrović",
+            "telefon": "061456456",
+            "korisnickoIme": "petar",
+            "blokiran": false
+        },
+        "-MNQoCqEXydVTdCNV47C": {
+            "adresa": "Jug Bogdana 14, Zrenjanin",
+            "datumRodjenja": "1982-05-05",
+            "email": "jjovanovic@webd.com",
+            "ime": "Jovana",
+            "lozinka": "jovana123",
+            "prezime": "Jovanović",
+            "telefon": "062321321",
+            "korisnickoIme": "jovana",
+            "blokiran": false
+        },
+        "-MNQoJw2p9rci4Rm_rYY": {
+            "adresa": "Cara Lazara 9a, Kragujevac",
+            "datumRodjenja": "1990-09-17",
+            "email": "mmarkovic@webd.com",
+            "ime": "Marko",
+            "lozinka": "marko123",
+            "prezime": "Marković",
+            "telefon": "063876876",
+            "korisnickoIme": "marko",
+            "blokiran": false
+        },
+        "-MNQoR-5erkWvcm8Hdnk": {
+            "adresa": "Solunska 5, Niš",
+            "datumRodjenja": "1973-03-10",
+            "email": "ffilipovic@webd.com",
+            "ime": "Filip",
+            "lozinka": "filip123",
+            "prezime": "Filipović",
+            "telefon": "064159159",
+            "korisnickoIme": "filip",
+            "blokiran": false
+        },
+        "-MNQoWt_gDudX5W8TLQj": {
+            "adresa": "Ružićeva 32, Beograd",
+            "datumRodjenja": "1998-06-29",
+            "email": "ttijanic@webd.com",
+            "ime": "Tijana",
+            "lozinka": "tijana123",
+            "prezime": "Tijanić",
+            "telefon": "065753753",
+            "korisnickoIme": "tijana",
+            "blokiran": false
+        }
+    }
+}
