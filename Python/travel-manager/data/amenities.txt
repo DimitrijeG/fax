@@ -1,0 +1,10 @@
+001|parking
+002|balkon
+003|klima
+004|kuhinja
+005|veš mašina
+006|sef
+007|internet
+008|aparat za kafu
+009|đakuzi
+010|televizor
