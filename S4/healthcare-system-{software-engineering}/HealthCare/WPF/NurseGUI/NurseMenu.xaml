@@ -1,0 +1,47 @@
+﻿<Window x:Class="HealthCare.WPF.NurseGUI.NurseMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        Title="NurseMenu" Height="250" Width="350" Closing="Window_Closing">
+    <Grid>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Pacijent">
+                <MenuItem Header="_CRUD" Click="mnuCRUD_Click" />
+            </MenuItem>
+            <MenuItem Header="_Prijem">
+                <MenuItem Header="_Prijem pacijenta" Click="mnuReception_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Hitno">
+                <MenuItem Header="_Hitni pregledi i operacije" Click="mnuUrgent_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Uputi i recepti">
+                <MenuItem Header="_Uputi i recepti pacijenata" Click="mnuReferral_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Poruci">
+                <MenuItem Header="_Porucivanje lekova" Click="mnuOrder_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Vizite">
+                <MenuItem Header="_Obavi vizitu" Click="mnuVisit_Click"/>
+            </MenuItem>
+        </Menu>
+        <Button Content="Logout" Name="btnLogout"  HorizontalAlignment="Left" Height="35" Margin="254,149,0,0" VerticalAlignment="Top" Width="50" Click="btnLogout_Click" />
+
+
+        <Button Height="40" Width="70"  Click="Button_Click" Background="#89cff0" Margin="30,120,0,0" HorizontalAlignment="Left" BorderBrush="Wheat">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+
+            </Button.Resources>
+            <StackPanel Orientation="Horizontal">
+             <TextBlock Text="Chat" Margin="0 0 0 3" Foreground="White"/>
+            <fa:IconBlock Icon="Message" FontSize="16" Margin="5 0 0 0" Foreground="White"/>
+                
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

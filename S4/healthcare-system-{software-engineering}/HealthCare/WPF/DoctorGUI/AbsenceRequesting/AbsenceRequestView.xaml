@@ -1,0 +1,88 @@
+﻿<Window x:Class="HealthCare.WPF.DoctorGUI.AbsenceRequesting.AbsenceRequestView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:validationRules="clr-namespace:HealthCare.WPF.DoctorGUI.ValidationRules"
+        mc:Ignorable="d"
+        Title="AbsenceRequestView" Height="500" Width="800">
+    <Grid>
+            <Grid Grid.Row="1" Margin="0 0 0 20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
+                <Label Height="30" VerticalContentAlignment="Center" Content="Razlog odsustva:"/>
+                <TextBox Height="30" Text="{Binding AbsenceReason}"/>
+
+                <Label Height="30" VerticalContentAlignment="Center" Margin="0 20 0 0" Content="Pocetak odsustva (Minimum 2 dana unapred):"/>
+                <DatePicker Focusable="False" Height="30" VerticalContentAlignment="Center" SelectedDate="{Binding AbsenceStartingDate}"/>
+
+                <Label Height="30" VerticalContentAlignment="Center" Margin="0 20 0 0" Content="Broj dana za odsustvo:"/>
+                <TextBox Height="30" x:Name="tbDays">
+                    <TextBox.Text>
+                        <Binding Path="AbsenceDurationDays" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validationRules:PositiveIntegerValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+
+                <Button Width="150" Height="30" Content="Posalji zahtev" Command="{Binding MakeAbsenceRequestCommand}" Margin="0 50 0 0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=tbDays, Path=(Validation.HasError)}" Value="True">
+                                    <Setter Property="IsEnabled" Value="False"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </StackPanel>
+            <Grid Grid.Column="1" Margin="5">
+                <ListView x:Name="PatientListView" ItemsSource="{Binding DoctorRequests}" SelectionMode="Single">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" Width="50"  DisplayMemberBinding="{Binding Id}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="0 0 20 0"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Status" Width="100"  DisplayMemberBinding="{Binding IsApproved}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="0 0 20 0"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Pocetni Datum" Width="150"  DisplayMemberBinding="{Binding Start}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="0 0 20 0"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Krajnji Datum" Width="100"  DisplayMemberBinding="{Binding End}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="0 0 20 0"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

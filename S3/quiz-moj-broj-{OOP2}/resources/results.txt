@@ -1,0 +1,6 @@
+REZULTATI IGRE (25/05/2023 10:49)
+
+=================== RUNDA 1 ===================
+Masha (pobednik): 2 * 4 = 8, greška: 741
+Dimitrije: 10 - 2 = 8, greška: 741
+Računar: (2 * 4 + 7) * 50 + 9 - 10 = 749, greška: 0

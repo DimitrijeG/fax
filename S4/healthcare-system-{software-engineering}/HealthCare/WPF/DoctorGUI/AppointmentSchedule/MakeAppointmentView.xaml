@@ -1,0 +1,90 @@
+﻿<Window x:Class="HealthCare.WPF.DoctorGUI.AppointmentSchedule.MakeAppointmentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MakeAppointmentView" Height="550" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Make An Appointment" 
+                   FontSize="24" Margin="5 20 0 0"/>
+        <Grid Grid.Row="1" Margin="0 10">
+            <StackPanel>
+                <Label Content="Termin: "/>
+                <DatePicker Width="300" HorizontalAlignment="Left" SelectedDate="{Binding StartDate}" Focusable="False"/>
+                <StackPanel Orientation="Horizontal" Margin="0 5">
+                    <Label Content="Sat: "/>
+                    <TextBox Width="50" Text="{Binding Hours}" PreviewTextInput="NumberValidationTextBox"/>
+                    <Label Content="Minuti: "/>
+                    <TextBox Width="50" Text="{Binding Minutes}" PreviewTextInput="NumberValidationTextBox"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2" Margin="0 10">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Operacija?"/>
+                <CheckBox VerticalAlignment="Center" Margin="0 0 10 0" IsChecked="{Binding IsOperation}"/>
+                <Label Content="Duzina trajanje(u minutima): "/>
+                <TextBox Width="150" Text="{Binding Duration}" PreviewTextInput="NumberValidationTextBox"/>
+                
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock Text="ODABERI PACIJENTA:"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <ListView Height="225" ItemsSource="{Binding Patients}" SelectedItem="{Binding SelectedPatient}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="JMBG" DisplayMemberBinding="{Binding JMBG}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Padding="0 0 20 0"  Text=""/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        
+                        <GridViewColumn Header="Ime" DisplayMemberBinding="{Binding NameAndLastName}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text=""/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Header="Pol" DisplayMemberBinding="{Binding Gender}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text=""/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Header="Datum Rodjenja" DisplayMemberBinding="{Binding Birthday}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text=""/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="5">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Odustani" Width="100" Padding="10" Margin="10" Command="{Binding CancelCommand}"/>
+                <Button Content="Potvrdi" Width="100" Padding="10" Margin="10" Command="{Binding SubmitCommand}"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

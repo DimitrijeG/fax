@@ -1,0 +1,111 @@
+﻿<Window x:Class="HealthCare.WPF.DoctorGUI.DoctorMainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="DoctorMainView" Height="550" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <StackPanel>
+                <Button Width="Auto" Height="40" Margin="10" Content="Zakazi Pregled/Operaciju" Command="{Binding CreateAppointmentViewCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Izmeni Pregled/Operaciju" Command="{Binding EditAppointmentCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Ukloni Pregled/Operaciju" Command="{Binding DeleteAppointmentCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Prikazi pacijenta" Command="{Binding ShowDetailedPatientInfoCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Pretrazi pacijente" Command="{Binding ShowPatientSearchCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Bolnicka lecenja" Command="{Binding ShowTreatmentsCommand}"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Zahtev za slobodne dane" Command="{Binding ShowAbsenceRequestViewCommand}"/>
+              
+                <Label Margin="0 15"/>
+                <Button Width="Auto" Height="40" Margin="10" Content="Otvori chat" Click="Button_Click"/>
+                <Button x:Name="LogOut" Width="Auto" Height="40" Margin="10" Content="Odjava" Command="{Binding LogOutCommand}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.05*"/>
+                <RowDefinition Height="0.9*"/>
+                <RowDefinition Height="0.05*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Pocetni datum filtriranja: " VerticalAlignment="Center"/>
+                <DatePicker Margin="20 0" Focusable="False" SelectedDate="{Binding StartDate}"/>
+                <TextBlock Text="Broj Dana:" VerticalAlignment="Center"/>
+                <TextBox Width="75" Margin="20 0" Text="{Binding NumberOfDays}"/>
+                <Button Width="75" Content="Primeni" Command="{Binding ApplyFilterCommand}"/>
+                <Button Width="75" Content="Resetuj" Command="{Binding ResetFilterCommand}"/>
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="293*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="2">
+                    <ListView x:Name="AppointmentsListView" Grid.ColumnSpan="2" SelectedItem="{Binding SelectedAppointment}" ItemsSource="{Binding Appointments}" SelectionMode="Single">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding AppointmentID}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0" Text="1"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Doktor" DisplayMemberBinding="{Binding Doctor}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Pacijent" DisplayMemberBinding="{Binding Patient}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Datum Pocetka" DisplayMemberBinding="{Binding StartingTime}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0" Text="10.04.2022. 10:15"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Trajanje u minutima" DisplayMemberBinding="{Binding Duration}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0" Text="15"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Operacija?" DisplayMemberBinding="{Binding IsOperation}">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Padding="0 0 20 0" Text="True"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Zapocni pregled" Command="{Binding StartExaminationCommand}" Width="150"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="HealthCare.WPF.ManagerGUI.PatientSatisfaction.Surveys.Comments.SurveyCommentsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SurveyCommentsView" MinHeight="550" MinWidth="600"
+        SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Komentari" Style="{StaticResource SmallHeader}"
+               VerticalAlignment="Center" Margin="20 0 0 0"/>
+
+        <ListView Grid.Row="1" ItemsSource="{Binding Surveys}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding surveyID}"/>
+                    <GridViewColumn Header="Naziv stavke" DisplayMemberBinding="{Binding TopicName}" />
+                    <GridViewColumn Header="Ocena" DisplayMemberBinding="{Binding SelectedRating}"/>
+                    <GridViewColumn Header="Komentar" DisplayMemberBinding="{Binding AdditionalComment}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="HealthCare.WPF.ManagerGUI.Interior.Renovations.RenovationListingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Renovacije" MinHeight="500" MinWidth="400"
+        SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource RoundedButton}">
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+            <Setter Property="Margin" Value="5 0" />
+        </Style>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Renoviranje prostorija" Style="{StaticResource SmallHeader}"
+               HorizontalAlignment="Center" Margin="50 0"
+               Grid.ColumnSpan="2"/>
+
+        <Label Content="Složeno renoviranje:" Margin="5 0 5 10" Grid.Row="1" />
+        <CheckBox Name="cbComplex" Margin="5 0 5 10" Grid.Row="1" Grid.Column="1"
+               HorizontalAlignment="Left" VerticalAlignment="Center" 
+               Checked="cbComplex_Checked" Unchecked="cbComplex_Unchecked" />
+
+        <ListView Name="lvRooms" Grid.Row="2" Grid.ColumnSpan="2" Margin="0 0 0 10"
+                  ItemsSource="{Binding Items}" SelectionChanged="lvRooms_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Soba" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Tip sobe" DisplayMemberBinding="{Binding Type}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Grid.Row="3" Content="Pocetak renoviranja:" />
+        <DatePicker Name="StartDatePicker" Margin="5 5" 
+                    Grid.Row="3" Grid.Column="1"/>
+        
+        <Label Grid.Row="4" Content="Kraj renoviranja:" />
+        <DatePicker Name="EndDatePicker" Margin="5 5" 
+                    Grid.Row="4" Grid.Column="1"/>
+
+        <DockPanel Grid.Row="5" Grid.ColumnSpan="2" Margin="0 10 0 0">
+            <Button Name="btnRenovate" Content="Renoviraj" FontWeight="Bold" Click="btnRenovate_Click"/>
+            <Button Name="btnSplit" Content="Podeli sobu" FontWeight="Bold" Click="btnSplit_Click"/>
+            <Button Name="btnJoin" Content="Spoji sobe" FontWeight="Bold" Click="btnJoin_Click"/>
+            <Button Content="Nazad" Click="btnExit_Click"/>
+        </DockPanel>
+    </Grid>
+</Window>

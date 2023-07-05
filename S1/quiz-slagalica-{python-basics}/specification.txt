@@ -1,0 +1,34 @@
+https://www.youtube.com/watch?v=-VBMmNlIEpE&ab_channel=opcvrc
+
+Kao što se može zaključiti iz uvodnog videa, tema domaćeg zadatka biće slagalica, jedan deo igara.
+
+Aplikacija treba da učita podatke iz txt fajlova (za svaku igru po jedan).
+Potrebno je implementirati dve igre:
+
+        a)Prva igra je Ko zna zna. Potrebno je iz fajla učitati pitanja i ponuđene odgovore od kojih je jedan tačan.
+Najbolje bi bilo da ima četiri ponuđena odgovora. Pokretanjem igre dajte korisniku pitanja i priliku da izabere jedno
+od ponuđenih rešenja i opciju da preskoči. Ako pogodi, dobija poene, ako promaši gubi i ako preskoči niti dobija niti
+gubi poene. Dovoljno je da jedno pokretanje igre da ukupno 7-10 pitanja, sami odlučite.
+        b)Druga igra su Asocijacije. Ovde vam dajem punu slobodu, verovatno znate svi kako izgleda ova igra, implementirajte
+na neki način, ako uspete kao i stvarno što funkcioniše, super. Pokretanjem igre korisniku se daje opcija da otvara polja
+asocijacije, možete dati opciju da korisnik otvara određenu kolonu, a ne određena polja, kako biste sebi olakšali implementaciju.
+Korisnik dobija određen broj poena ako pogodi rešenje kolone i taj broj zavisi od broja otvorenih polja, takođe isto važi i za
+otkrivanje konačnog rešenja. Ograničite samo igru na određen broj koraka(u zavisnosti od broja polja koja ubacite, na primer ako
+imate 16 polja dajte oko 20 pokušaja.
+
+Način na koji ćete implementirati ostavljam na vama da smislite, imate potpunu slobodu, pokažite kreativnost.
+
+**Dodatno: Kao dodatni zadatak možete uraditi igru spojnice, ali to uradite ako ste sigurni da ste prethodne dve
+uradili kako treba. Smislite način implementacije, ako treba pomoć tu sam.
+
+Najbolje bi bilo da date roditeljima/društvu/komšiji/psu da testira program kako biste napravili najbolju verziju.
+
+
+Napomena:
+Da bi se iz tekstualne datoteke učitao sadržaj koji sadrži i ćirilična i
+latinična slova, neophodno je to naglasiti prilikom učitavanja dodatnim parametrom
+'encoding'.
+umesto dosadašnjeg:
+fajl = open("file.txt", "r")
+dodajemo i parametar 'encoding' pa treba pisati:
+fajl = open("file.txt", "r", encoding="utf-8") 

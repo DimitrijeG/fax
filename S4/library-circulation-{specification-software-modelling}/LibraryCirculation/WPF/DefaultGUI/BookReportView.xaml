@@ -1,0 +1,82 @@
+﻿<Window x:Class="LibraryCirculation.WPF.DefaultGUI.BookReportView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Naslovi" MinHeight="500" MinWidth="300">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource RoundedButton}">
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+            <Setter Property="Margin" Value="5 0" />
+        </Style>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+        </Style>
+        <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource InputBox}">
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="MinWidth" Value="80"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.75*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Top 10 naslova" Style="{StaticResource SmallHeader}"
+               Grid.ColumnSpan="2" Margin="50 0 50 10"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Izveštaj za prošlih:" HorizontalAlignment="Right"/>
+            <ComboBox Grid.Column="1"
+                      ItemsSource="{Binding Categories}"
+                      SelectedValue="{Binding SelectedTimeSlot}"
+                      DisplayMemberPath="Title"
+                      SelectedValuePath="TimeSlot"
+                      HorizontalAlignment="Left"/>
+            <Button Grid.Column="2" Content="Nazad" Command="{Binding ExitCommand}" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <ListView Name="LvBooks" Grid.Row="2" ItemsSource="{Binding Items}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="" DisplayMemberBinding="{Binding Rating}"/>
+                    <GridViewColumn Header="Isbn" DisplayMemberBinding="{Binding Isbn}" />
+                    <GridViewColumn Header="Udk" DisplayMemberBinding="{Binding Udk}" />
+                    <GridViewColumn Header="Naziv" DisplayMemberBinding="{Binding Title}" />
+                    <GridViewColumn Header="Godina" DisplayMemberBinding="{Binding Year}" />
+                    <GridViewColumn Header="Jezik" DisplayMemberBinding="{Binding Language}" />
+                    <GridViewColumn Header="Odobreno" DisplayMemberBinding="{Binding Publisher}" />
+                    <GridViewColumn Header="Autori" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ListView ItemsSource="{Binding Authors}" BorderBrush="Transparent" Background="Transparent">
+                                    <ListView.ItemContainerStyle>
+                                        <Style TargetType="ListViewItem">
+                                            <Setter Property="IsHitTestVisible" Value="False"/>
+                                        </Style>
+                                    </ListView.ItemContainerStyle>
+                                </ListView>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Format" DisplayMemberBinding="{Binding Format}" />
+                    <GridViewColumn Header="Koričenje" DisplayMemberBinding="{Binding CoverType}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="HealthCare.WPF.NurseGUI.Patients.CreatePatientView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="CreatePatientView" Height="570" Width="260">
+    <Grid>
+        <Label Content="Dodaj pacijenta" Name="lblTitle" HorizontalAlignment="Left" Margin="10,00,0,0" FontSize="17" FontWeight="Bold" VerticalAlignment="Top"/>
+
+        <Label Content="Ime:" Name="lblName" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbName" Margin="110,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Prezime:" Name="lblLastName" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbLastName" Margin="110,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="JMBG:" Name="lblJMBG" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbJMBG" Margin="110,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Datum rodjenja:" Name="lblBirthDate" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbBirthDate" Margin="110,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Telefon:" Name="lblPhoneNumber" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbPhoneNumber" Margin="110,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Adresa:" Name="lblAddress" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbAddress" Margin="110,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Pol:" Name="lblGender" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top"/>
+        <RadioButton Margin="110,35,0,0" Name="cbMale" GroupName="gender" IsChecked="True" Width="60" Height="20" HorizontalAlignment="Left">Muski</RadioButton>
+        <RadioButton Margin="175,35,0,0" Name="cbFemale"  GroupName="gender" Width="60" Height="20" HorizontalAlignment="Left">Zenski</RadioButton>
+
+        <Label Content="Korisnicko ime:" Name="lblUsername" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbUsername" Margin="110,315,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Lozinka:" Name="lblPassword" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbPassword" Margin="110,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <CheckBox Content="Blokiran" Name="chbBlocked" HorizontalAlignment="Left" Margin="110,395,0,0" VerticalAlignment="Top"/>
+
+        <Button Name="btnMedicalRecord" Content="Zdravsteni karton" HorizontalAlignment="Left" Margin="110,430,0,0" Width="120" Height="30"  VerticalAlignment="Top" Click="btnMedicalRecord_Click"/>
+
+        <Button Content="Kreiraj nalog" Name="btnAdd" HorizontalAlignment="Left" Height="30" Margin="10,480,0,0" VerticalAlignment="Top" Width="100" Click="btnAdd_Click"/>
+        <Button Content="Izadji" Name="btnExit" HorizontalAlignment="Left" Height="30" Margin="130,480,0,0" VerticalAlignment="Top" Width="100" Click="btnExit_Click"/>
+            
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="LibraryCirculation.WPF.LibrarianGUI.Reservations.ReservationListingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Rezervacije" MinHeight="450" MinWidth="490"
+        SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource RoundedButton}">
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="35" />
+            <Setter Property="Margin" Value="5 0" />
+        </Style>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.75*"/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Obrada rezervacija" Style="{StaticResource SmallHeader}" Margin="0 0 0 20"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <DockPanel HorizontalAlignment="Left">
+                <Button Content="Prihvati" FontWeight="Bold" Width="100" Click="BtnApprove_Click"/>
+                <Button Content="Odbij" FontWeight="Bold" Width="100" Click="BtnDecline_Click"/>
+                <Button Content="Iznajmi" FontWeight="Bold" Width="100" Click="BtnRent_Click"/>
+            </DockPanel>
+            <Button Grid.Column="1" Content="Nazad" HorizontalAlignment="Right" Width="100" Click="BtnClose_Click"/>
+        </Grid>
+
+        <ListView Grid.Row="2" Name="LvReservations" ItemsSource="{Binding Items}" 
+                  SelectionMode="Single"
+                  SelectedItem="{Binding SelectedReservation}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="Auto" Header="ID" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Width="Auto" Header="Datum slanja" DisplayMemberBinding="{Binding SubmittingDate}"/>
+                    <GridViewColumn Width="Auto" Header="Datum potvrde" DisplayMemberBinding="{Binding ApprovalDate}" />
+                    <GridViewColumn Width="Auto" Header="Status" DisplayMemberBinding="{Binding Status}" />
+                    <GridViewColumn Width="Auto" Header="Knjiga" DisplayMemberBinding="{Binding BookName}" />
+                    <GridViewColumn Width="Auto" Header="Čitalac" DisplayMemberBinding="{Binding ReaderName}" />
+                    <GridViewColumn Width="Auto" Header="Id primerka" DisplayMemberBinding="{Binding AssignedCopyId}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,143 @@
+﻿<Window x:Class="HealthCare.WPF.PatientGUI.PatientMainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        mc:Ignorable="d"
+        Title="Main menu" Height="690" Width="1180" WindowStartupLocation="CenterScreen" AllowsTransparency="True" 
+        Background="Transparent" WindowStyle="None">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Width="240" CornerRadius="25 0 0 25" Background="#179c8c">
+                
+            </Border>
+
+
+            <Border CornerRadius="0 25 25 0" Grid.Column="1" Background="#effcfa">
+                
+            </Border>
+        </Grid>
+        
+        <!--Controls-->
+        <Grid x:Name="mainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" x:Name="nzm"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+             
+            <!--<Button Width="30" Height="30" Background="#136c63"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="-15px" Click="Button_Click_4">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border Background="{TemplateBinding Background}" CornerRadius="25" />
+                            <fa:IconBlock Icon="ChevronLeft" />
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>-->
+            <!--Main Menu-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Margin="0 50 0 0" HorizontalAlignment="Center" Grid.Row="0">
+                    <fa:IconBlock Icon="User" Foreground="White" FontSize="30"/>
+                    <TextBlock x:Name="labelUsername" Text="Arezinko" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Foreground="#effcfa" Margin="10 0 0 0"/>
+                    <Button Width="auto" Height="auto" Background="Transparent"  Margin="5 5 0 0" BorderBrush="Transparent"  Click="btnNotifications_Click">
+                        <fa:IconBlock Icon="Bell" Foreground="White" FontSize="15"/>
+                    </Button>
+                </StackPanel>
+                
+                <StackPanel Orientation="Vertical" Margin="0 50 0 40" HorizontalAlignment="Center" Grid.Row="1">
+                    <Button x:Name="btnCrud" Style="{StaticResource menuButton}" Click="Button_Click">
+                        <Grid x:Name="btnCrud1">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="Edit" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="CRUD Pregledi" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="btnPriority" Style="{StaticResource menuButton}" Click="Button_Click_1">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="Calendar" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Kreiranje sa prioritetom" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="btnAnamnesis" Style="{StaticResource menuButton}" Click="Button_Click_2">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="ClipboardCheck" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Pretraga anamneza" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="btnDoctors" Style="{StaticResource menuButton}" Click="btnDoctors_Click">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="Stethoscope" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Pretraga doktora" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="btnHospitalSurvey" Style="{StaticResource menuButton}" Click="btnHospitalSurvey_Click">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="Poll" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Ocenjivanje bolnice" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+                    <Button x:Name="btnDoctorSurvey" Style="{StaticResource menuButton}" Click="btnDoctorSurvey_Click">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                <fa:IconBlock Icon="Poll" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Ocenjivanje doktora" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+                </StackPanel>
+                <Button x:Name="btnLogout" Style="{StaticResource menuButton}" Grid.Row="2" Click="Button_Click_3">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                            <fa:IconBlock Icon="ArrowRightFromBracket" Style="{StaticResource menuButtonIcon}">
+                                <fa:IconBlock.RenderTransform>
+                                    <ScaleTransform ScaleX="-1" />
+                                </fa:IconBlock.RenderTransform>
+                            </fa:IconBlock>
+                            <TextBlock Text="Odjavi se" Style="{StaticResource menuButtonText}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Button>
+
+            </Grid>
+            <Grid Grid.Column="1" x:Name="Helpme">
+                <ContentControl x:Name="mainContentGrid"/>
+            </Grid>
+            
+            
+        </Grid>
+        
+        
+        
+        
+        
+    </Grid>
+</Window>

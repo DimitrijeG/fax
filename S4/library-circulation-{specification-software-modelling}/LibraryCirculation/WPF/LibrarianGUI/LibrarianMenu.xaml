@@ -1,0 +1,31 @@
+﻿<Window x:Class="LibraryCirculation.WPF.LibrarianGUI.LibrarianMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Bibliotekar" MinHeight="420" MinWidth="600" Closing="Window_Closing"
+        SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource RoundedButton}" />
+    </Window.Resources>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Naslovi" Click="BtnBooks_Click"/>
+        <Button Grid.Column="1" Grid.Row="0" Content="Primerci" Click="BtnCopies_Click"/>
+        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Obrada rezervacija" Click="BtnReservations_Click"/>
+        <Button Grid.Column="0" Grid.Row="2" Click="BtnNotImplemented_Click" Content="Pretraga fonda"/>
+        <Button Grid.Column="1" Grid.Row="2" Click="BtnBookRating_Click" Content="Najčitaniji naslovi"/>
+        <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Content="Odjava" Click="BtnLogout_Click" />
+    </Grid>
+</Window>

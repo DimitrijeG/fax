@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:HealthCare.Application.Common.Converter"
+                    xmlns:local="clr-namespace:HealthCare.Core.PatientSatisfaction">
+    
+    <converters:RadioBoolToIntConverter x:Key="radioConverter"/>
+    
+    <DataTemplate x:Key="SurveySectionTemplate" DataType="{x:Type local:Survey}">
+        <StackPanel Margin="0,30,0,30" Width="400">
+            <TextBlock Text="{Binding Description}" FontWeight="Bold" HorizontalAlignment="Center" />
+            <UniformGrid Rows="1" Columns="5" Margin="0 10 0 0">
+                <RadioButton Content="1" IsChecked="{Binding Path=SelectedRating, Converter={StaticResource radioConverter}, ConverterParameter=1}" />
+                <RadioButton Content="2" IsChecked="{Binding Path=SelectedRating, Converter={StaticResource radioConverter}, ConverterParameter=2}" />
+                <RadioButton Content="3" IsChecked="{Binding Path=SelectedRating, Converter={StaticResource radioConverter}, ConverterParameter=3}" />
+                <RadioButton Content="4" IsChecked="{Binding Path=SelectedRating, Converter={StaticResource radioConverter}, ConverterParameter=4}" />
+                <RadioButton Content="5" IsChecked="{Binding Path=SelectedRating, Converter={StaticResource radioConverter}, ConverterParameter=5}" />
+            </UniformGrid>
+            <TextBlock Text="Dodatni komentar:" Margin="0 20 0 0"/>
+            <TextBox Text="{Binding AdditionalComment}" Margin="0 0 0 20"  TextWrapping="Wrap"/>
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>

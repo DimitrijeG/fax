@@ -1,0 +1,112 @@
+﻿<Window x:Class="HealthCare.WPF.ManagerGUI.PhysicalAssets.Rearranging.EquipmentRearrangingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Raspoređivanje opreme" MinHeight="500" MinWidth="550"
+        SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource RoundedButton}">
+            <Setter Property="Width" Value="90" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Margin" Value="5 0" />
+        </Style>
+        <Style TargetType="{x:Type ListViewItem}">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20 0 20 20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Odabir opreme:"
+               VerticalAlignment="Center" HorizontalAlignment="Right" 
+               FontSize="12" Margin="5 20 5 5"/>
+        <ComboBox Grid.Column="1" Name="cbEquipment" FontSize="12" Margin="5 20 5 5" 
+                  ItemsSource="{Binding Equipment}" DisplayMemberPath="Name" 
+                  SelectionChanged="cb_SelectionChanged" />
+        
+        <Label Grid.Row="1" Content="Količina koja se prenosi:"
+               VerticalAlignment="Center" HorizontalAlignment="Right" 
+               FontSize="12" Margin="5 5 5 20"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="tbQuantity" FontSize="12" 
+                 Margin="5 5 5 20" Width="100" HorizontalAlignment="Left"/>
+
+        <ListView Grid.Row="2" Name="lvFromRoom" ItemsSource="{Binding FromRooms}" Margin="5 0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="auto" Header="Prostorija">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding RoomName}" TextAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="auto" Header="Tip prostorije">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding RoomType}" TextAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="auto" Header="Trenutno stanje">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Quantity}" TextAlignment="Left"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Grid.Row="2" Grid.Column="1" Name="lvToRoom" ItemsSource="{Binding ToRooms}" Margin="5 0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="auto" Header="Prostorija">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding RoomName}" Foreground="{Binding Color}" TextAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="auto" Header="Tip prostorije">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding RoomType}" Foreground="{Binding Color}" TextAlignment="Right"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="auto" Header="Trenutno stanje">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Quantity}" Foreground="{Binding Color}" TextAlignment="Left"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Grid Grid.Row="3" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Transferuj" FontWeight="Bold"
+                    Name="btnTransfer" Click="Button_Transfer"/>
+            <Button Content="Nazad" Grid.Column="1" Click="Button_Exit"/>
+        </Grid>
+        <DatePicker Name="datePicker" Grid.Row="3" Grid.Column="1" Margin="20" Height="40"/>
+    </Grid>
+</Window>

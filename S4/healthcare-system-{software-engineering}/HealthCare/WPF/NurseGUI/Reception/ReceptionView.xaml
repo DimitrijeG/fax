@@ -1,0 +1,17 @@
+﻿<Window x:Class="HealthCare.WPF.NurseGUI.Reception.MainReceptionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="ReceptionView" Height="230" Width="300">
+    <Grid>
+        <Label Content="Prijem pacijenta" Name="lblTitle" HorizontalAlignment="Left" Margin="10,00,0,0" FontSize="15" FontWeight="Bold" VerticalAlignment="Top"/>
+
+        <Label Content="JMBG:" Name="lblJMBG" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Center" Name="tbJMBG"  Margin="0,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30"/>
+
+        <Button Content="Unesi" Name="btnSubmit" HorizontalAlignment="Left" Margin="10,150,0,0" Width="120" Height="30"  VerticalAlignment="Top" Click="btnSubmit_Click"/>
+        <Button Content="Izadji" Name="btnClose" HorizontalAlignment="Right" Margin="0,150,10,0" Width="120" Height="30"  VerticalAlignment="Top" Click="btnClose_Click"/>
+    </Grid>
+</Window>

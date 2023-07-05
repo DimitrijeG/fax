@@ -1,0 +1,8 @@
+Dušan|Milanović|+38121996531|Bulevar Oslobođenja 50, Novi Sad|dusan|123123|1985-09-12|MALE|dusan@gmail.com|5849381126
+Dimitrije|Gašić|+381642081491|Đoke Mijatovića 30, Novi Sad|gasic|123123|2002-11-01|MALE|ADMIN|SECOND|1|81022.65
+Gojko|Vučković|+381215934031|Bulevar Oslobođenja 50, Novi Sad|gojko|123123|2002-12-04|MALE|RECEPTIONIST|SECOND|1|56922.77
+Maša|Ivanov|+38121441223|Bulevar Oslobođenja 50, Novi Sad|masa|123123|2002-10-04|FEMALE|RECEPTIONIST|SECOND|2|64800.82
+Milan|Arežina|+38127582001|Bulevar Oslobođenja 50, Novi Sad|milan|123123|2002-11-15|MALE|MAID|FIRST|1|40000.22
+Nađa|Ilinčić|+38195039482|Bulevar Oslobođenja 50, Novi Sad|nadja|123123|2002-11-20|FEMALE|MAID|THIRD|3|47000.0
+Nikola|Nenadović|+38124321321|Bulevar Oslobođenja 50, Novi Sad|nikola|123123|1995-03-21|MALE|RECEPTIONIST|SECOND|2|56020.99
+Petar|Petrović|+38121443231|Bulevar Oslobođenja 50, Novi Sad|petar|123123|1989-10-17|MALE|petar@gmail.com|4382958881

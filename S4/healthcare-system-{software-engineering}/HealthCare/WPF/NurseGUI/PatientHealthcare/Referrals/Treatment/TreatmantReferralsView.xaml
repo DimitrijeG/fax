@@ -1,0 +1,38 @@
+﻿<Window x:Class="HealthCare.WPF.NurseGUI.PatientHealthcare.Referrals.Treatment.TreatmantReferralsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="TreatmantReferralsView" Height="350" Width="700">
+
+    <Grid>
+        <Label Content="Uputi za bolnicko lecenje" Name="lblTitle" HorizontalAlignment="Left" Margin="10,00,0,0" FontSize="17" FontWeight="Bold" VerticalAlignment="Top"/>
+
+        <ListView Margin="10,40,230,80" Name="lvReferrals" ItemsSource="{Binding Referrals}" SelectedItem="{Binding Selected}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="Auto" Header="ID" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Width="Auto" Header="Broj dana" DisplayMemberBinding="{Binding Days}"/>
+                    <GridViewColumn Width="Auto" Header="Doktor" DisplayMemberBinding="{Binding Doctor}" />
+                    <GridViewColumn Width="Auto" Header="Terapija" DisplayMemberBinding="{Binding Therapy}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Margin="465,40,10,80" Name="lvRooms" ItemsSource="{Binding Rooms}" SelectedItem="{Binding SelectedRoom}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="Auto" Header="ID" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Width="Auto" Header="Tip" DisplayMemberBinding="{Binding Type}"/>
+                    <GridViewColumn Width="Auto" Header="Ime" DisplayMemberBinding="{Binding Name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+        <Button Content="Iskoristi" Name="btnUse" HorizontalAlignment="Left" Height="35" Margin="10,250,0,0" VerticalAlignment="Top" Width="130"  Command ="{Binding makeTreatmantCommand}"/>
+        <Button Content="Izadji" Name="btnClose"  HorizontalAlignment="Right" Height="35" Margin="0,250,10,0" VerticalAlignment="Top" Width="130" Command ="{Binding cancelCommand}"/>
+
+    </Grid>
+</Window>

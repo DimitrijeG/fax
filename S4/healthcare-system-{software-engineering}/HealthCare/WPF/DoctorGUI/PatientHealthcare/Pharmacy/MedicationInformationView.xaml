@@ -1,0 +1,42 @@
+﻿<Window x:Class="HealthCare.WPF.DoctorGUI.PatientHealthcare.Pharmacy.MedicationInformationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MedicationInformationView" Height="600" Width="400">
+    <Grid Margin="15 10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.55*"/>
+            <RowDefinition Height="0.45*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Informacije o leku" FontSize="24" FontWeight="DemiBold"/>
+            <Label Content="ID leka:"/>
+            <TextBox Margin="0 0 0 30" Text="{Binding ID}" Focusable="False"/>
+            <Label Content="Naziv leka:"/>
+            <TextBox Margin="0 0 0 30" Text="{Binding Name}" Focusable="False"/>
+            <Label Content="Opis leka:"/>
+            <TextBox Margin="0 0 0 30" Text="{Binding Description}" Focusable="False"/>
+            <Label Content="Supstance u leku:"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <Grid>
+                <ListView SelectionMode="Single" ItemsSource="{Binding MedicationIngredients}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Naziv supstance" Width="100">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Padding="0 0 20 0"  Text="{Binding}"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

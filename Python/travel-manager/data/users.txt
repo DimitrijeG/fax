@@ -1,8 +1,0 @@
-admin1|1234|Petar|Petrović|male|+381652081491|admin1@gmail.com|admin|False
-host1|abcd|Lenka|Lenkić|female|+381642500217|lemka@gmail.com|host|False
-host2|bcde|Nikola|Nenadović|male|+381642500217|pero@gmail.com|host|False
-host3|cdef|Milan|Milaković|male|+381642500217|milan@gmail.com|host|False
-guest1|aaaa|Milan|Arežina|male|+381647644382|zirko@gmail.com|guest|False
-guest2|bbbb|Maša|Ivanov|female|+381694822434|shoma@gmail.com|guest|False
-guest3|cccc|Vuk|Dimitrov|male|+381642358223|kecvu@gmail.com|guest|True
-guest4|dddd|Gojko|Vučković|male|+381642358223|gojko@gmail.com|guest|False

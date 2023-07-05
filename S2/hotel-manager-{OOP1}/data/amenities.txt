@@ -1,0 +1,5 @@
+1|veš mašina|
+2|kuhinja|
+3|balkon|
+4|sef|
+5|dodatni krevet|
