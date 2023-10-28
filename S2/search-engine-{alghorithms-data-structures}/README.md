@@ -42,7 +42,9 @@ Generisanje podataka se sprovodi prolaskom kroz sve prosledjene fajlove i upisiv
 Pretraga se prakticno svodi na pozivanje funkcije `search()` iz modula `Collections/trie.py` i rangiranje dobijenih rezulata. 
 Rangiranje se sprovodi modifikovanim `PageRank` algoritmom. Ovaj algoritam se krece u dubinu (preporucljivo 2 vidi *settings*) i pritom racuna rank stranice na osnovu broja kljucnih reci, ranka dolaznih linkova i broja odlaznih linkova za dolazne.
 Ovo oslikava i sledeca formula:
-$ R(V_i) = reci(V_i) + \sum_{V_j \in dolazni(V_i)}^n \frac{R(V_j)}{len(odlazni(V_j))} $
+```math
+R(V_i) = reci(V_i) + \sum_{V_j \in dolazni(V_i)}^n \frac{R(V_j)}{len(odlazni(V_j))}
+```
 
 Za vise mozete pogledati: [TextRank: Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
 
